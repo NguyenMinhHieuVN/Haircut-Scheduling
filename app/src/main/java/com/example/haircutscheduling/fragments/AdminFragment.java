@@ -1,0 +1,79 @@
+package com.example.haircutscheduling.fragments;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+
+import androidx.fragment.app.Fragment;
+
+import com.example.haircutscheduling.R;
+import com.example.haircutscheduling.activities.MainActivity;
+
+
+public class AdminFragment extends Fragment {
+
+    MainActivity mainActivity;
+
+    public AdminFragment() {
+        // Required empty public constructor
+    }
+
+    public static AdminFragment newInstance() {
+        AdminFragment fragment = new AdminFragment();
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        //LayoutInflater sử dụng để khởi tạo nội dung của các tệp XML bố cục vào các đối tượng View tương ứng
+        //ViewGroup là một tập hợp các Chế độ xem (TextView, EditText, ListView, v.v.), giống như một vùng chứa.
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_admin, container, false);
+
+        Button editDaysoff = view.findViewById(R.id.buttonEditNotAvailableDays);
+        editDaysoff.setOnClickListener(v -> {
+            mainActivity = (MainActivity) getActivity();
+            assert mainActivity != null;
+            mainActivity.setFragment(new EditDaysOffFragment());
+        });
+
+        Button editUpdatesBoard = view.findViewById(R.id.buttonAddToUpdatesBoard);
+        editUpdatesBoard.setOnClickListener(v -> {
+            mainActivity = (MainActivity) getActivity();
+            assert mainActivity != null;
+            mainActivity.setFragment(new EditUpdatesBoardFragment());
+        });
+
+        Button editOpeningHour = view.findViewById(R.id.buttonOpeningHour);
+        editOpeningHour.setOnClickListener(v -> {
+            mainActivity = (MainActivity) getActivity();
+            assert mainActivity != null;
+            mainActivity.setFragment(new EditOpeningHour());
+        });
+
+        Button editContactDetails = view.findViewById(R.id.buttonUpdateContactDetails);
+        editContactDetails.setOnClickListener(v -> {
+            mainActivity = (MainActivity) getActivity();
+            assert mainActivity != null;
+            mainActivity.setFragment(new EditAdminContactDetailsFragment());
+        });
+
+        Button todaysAppointments = view.findViewById(R.id.buttonTodayAppointment);
+        todaysAppointments.setOnClickListener(v -> {
+            mainActivity = (MainActivity) getActivity();
+            assert mainActivity != null;
+            mainActivity.setFragment(new TodayAppointmentsFragment());
+        });
+
+        return view;
+    }
+}

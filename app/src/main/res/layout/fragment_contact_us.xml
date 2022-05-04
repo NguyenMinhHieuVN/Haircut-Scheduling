@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#D4E1E0"
+    android:orientation="vertical"
+    tools:context=".fragments.ContactUsFragment">
+
+    <TextView
+        android:id="@+id/textViewContactUsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="
+Contact us!"
+        android:textColor="#5CA7B1"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@color/design_default_color_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:backgroundTint="#dcdcdc">
+
+        <TextView
+            android:id="@+id/editTextContactPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/phone_design"
+            android:drawableLeft="@drawable/phone_design"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/editTextContactEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/email_design"
+            android:drawableLeft="@drawable/email_design"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/editTextContactAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/address_design"
+            android:drawableLeft="@drawable/address_design"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPostalAddress"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

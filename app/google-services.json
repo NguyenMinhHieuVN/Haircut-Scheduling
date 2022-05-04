@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "511601541270",
+    "project_id": "haircutscheduling-d7da3",
+    "storage_bucket": "haircutscheduling-d7da3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511601541270:android:7528439f9e023f2ec942b7",
+        "android_client_info": {
+          "package_name": "com.example.haircutscheduling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511601541270-lj1t1lo6hp7lk2gnnq6d8nouhei4q6id.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIVFvI5nzXdy4EOOHRFwimVNU2Gslivgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511601541270-lj1t1lo6hp7lk2gnnq6d8nouhei4q6id.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

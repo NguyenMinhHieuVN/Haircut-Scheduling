@@ -112,24 +112,6 @@ View booked schedules"
 
                 <Button
 
-
-                    android:id="@+id/buttonUpdateBoard"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/buttoms_design"
-                    android:text="
-Update board"
-                    android:textSize="20sp"
-                    app:backgroundTint="#5CA7B1" />
-
-                <Button
-
                     android:id="@+id/buttonGetApoointmentHistory"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

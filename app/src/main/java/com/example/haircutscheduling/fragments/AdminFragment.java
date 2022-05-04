@@ -46,13 +46,6 @@ public class AdminFragment extends Fragment {
             mainActivity.setFragment(new EditDaysOffFragment());
         });
 
-        Button editUpdatesBoard = view.findViewById(R.id.buttonAddToUpdatesBoard);
-        editUpdatesBoard.setOnClickListener(v -> {
-            mainActivity = (MainActivity) getActivity();
-            assert mainActivity != null;
-            mainActivity.setFragment(new EditUpdatesBoardFragment());
-        });
-
         Button editOpeningHour = view.findViewById(R.id.buttonOpeningHour);
         editOpeningHour.setOnClickListener(v -> {
             mainActivity = (MainActivity) getActivity();

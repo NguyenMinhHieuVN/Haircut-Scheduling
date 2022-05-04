@@ -75,13 +75,6 @@ public class MainFragment extends Fragment {
             mainActivity.setFragment(new UserHistoryFragment());
         });
 
-        Button seeUpdatesBoard = view.findViewById(R.id.buttonUpdateBoard);
-        seeUpdatesBoard.setOnClickListener(v -> {
-            mainActivity = (MainActivity) getActivity();
-            assert mainActivity != null;
-            mainActivity.setFragment(new UpdatesBoardFragment());
-        });
-
         Button contactUs = view.findViewById(R.id.buttonContactUs);
         contactUs.setOnClickListener(v -> {
             mainActivity = (MainActivity) getActivity();

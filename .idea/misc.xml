@@ -48,6 +48,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/Appcattocminh - new - git - Copy/app/src/main/res/layout/fragment_edit_opening_hour.xml" value="0.2078804347826087" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Appcattocminh - new - git - Copy/app/src/main/res/layout/fragment_edit_updates_board.xml" value="0.2078804347826087" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Appcattocminh - new - git - Copy/app/src/main/res/layout/fragment_main.xml" value="0.2078804347826087" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Appcattocminh - new - git - Copy/app/src/main/res/layout/fragment_select_appointments.xml" value="0.16802536231884058" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Appcattocminh - new - git - Copy/app/src/main/res/layout/fragment_updates_board.xml" value="0.1762917933130699" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Appcattocminh - new - git - Copy/app/src/main/res/layout/fragment_user_history.xml" value="0.15092592592592594" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Appcattocminh - new - git - Copy/app/src/main/res/layout/history_cards.xml" value="0.15092592592592594" />
@@ -107,6 +108,10 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/Appcattocminh/app/src/main/res/layout/updates_cards.xml" value="0.34010416666666665" />
       </map>
     </option>
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Desktop/Javadoc" />
+    <option name="LOCALE" value="en" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

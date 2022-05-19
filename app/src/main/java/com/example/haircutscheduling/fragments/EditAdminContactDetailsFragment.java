@@ -56,14 +56,14 @@ public class EditAdminContactDetailsFragment extends Fragment {
             String phone = newPhone.getText().toString();
             mainActivity = (MainActivity) getActivity();
 
-            if (phone.isEmpty())//khi chuỗi trống trả về true, ngược lại trả về false
+            if (phone.isEmpty())//khi chuoi trong tra ve true, nguoc lai tra ve false
             {
                 Toast.makeText(mainActivity, "Please enter a new phone number.",Toast.LENGTH_SHORT).show();
-                //một thông báo nhỏ mà ứng dụng gửi tới người dùng, nó xuất hiện gần phía cuối màn hình một khoảng thời gian gắn 2s
+                //mot thong bao nho ma ung dung gui toi nguoi dung, no xuat hien gan phia cuoi man hinh mot khoang thoi gian ngan 2s
             }
             else {
                 SharedPreferences.Editor editor = mainActivity.getSharedPreferences(mainActivity.SHARED_PREFS_CONTACT, MODE_PRIVATE).edit();
-                //cho phép bạn lưu lại các các thông số bạn đã thiết lập trước đó
+                //cho phep ban luu lai cac thong so ban da thiet lap truoc do
                 editor.putString(mainActivity.PHONE, phone);
                 editor.apply();
 

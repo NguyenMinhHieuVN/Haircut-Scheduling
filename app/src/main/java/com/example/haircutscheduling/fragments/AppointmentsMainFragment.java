@@ -55,8 +55,8 @@ public class AppointmentsMainFragment extends Fragment {
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.hairstyleRecyclerView);
         recyclerView.setHasFixedSize(true);
-        //RecyclerView là một ViewGroup nó được dùng để chuẩn bị và hiện thị các View tương tự nhau.
-        //RecyclerView được cho là sự kế thừa của ListView và GridView
+        //RecyclerView la mot ViewGroup no duoc dung de chuanbi va hien thi cac View tuong ung nhau
+        //RecyclerView duoc cho la su ke thua cua ListView va GridView
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);

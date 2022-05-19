@@ -28,13 +28,13 @@ public class HairStylesMenuCustomAdapter extends RecyclerView.Adapter<HairStyles
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         CardView cardView;
-        //CardView cho phép các bạn hiển thị nội dung một cách nổi bật hơn, bo góc đẹp hơn. Và nhất là khi kết hợp với RecyclerView
+        // CardView cho phep cac ban hien thi noi dung mot cach noi bat hon, bo goc dep. Va nhat la khi ket hop voi RecyclerView
         TextView textViewHairStyle;
         TextView textViewPrice;
         ImageView imageViewIcon;
 
         public MyViewHolder(View itemView) {
-            super(itemView);//một biến tham chiếu
+            super(itemView);//mot bien tham chieu
             this.cardView = (CardView) itemView.findViewById(R.id.available_card_view);
             this.textViewHairStyle = (TextView) itemView.findViewById(R.id.textViewHairStyle);
             this.textViewPrice = (TextView) itemView.findViewById(R.id.textViewHour);
@@ -42,7 +42,7 @@ public class HairStylesMenuCustomAdapter extends RecyclerView.Adapter<HairStyles
         }
     }
 
-    @NonNull//annotation này sẽ quy định những đầu vào giống nhau và chỉ đích danh được một loại tham số nào được truyền vào
+    @NonNull//annotation nay se quy dinh nhung dau vao giong nhau va chi dich danh duoc mot loai tham so nao duoc truyen vao
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
@@ -62,7 +62,7 @@ public class HairStylesMenuCustomAdapter extends RecyclerView.Adapter<HairStyles
         ImageView imageView = holder.imageViewIcon;
         CardView cardView = holder.cardView;
 
-        //tham số position này để liên kết dữ liệu với view
+        // tham so pssition nay de lien ket du lieu voi view
         String hairStyle = dataSet.get(position).getHairStyle();
         textViewHairStyle.setText(hairStyle);
 

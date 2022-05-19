@@ -44,8 +44,8 @@ public class AdminFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        //LayoutInflater sử dụng để khởi tạo nội dung của các tệp XML bố cục vào các đối tượng View tương ứng
-        //ViewGroup là một tập hợp các Chế độ xem (TextView, EditText, ListView, v.v.), giống như một vùng chứa.
+        //LayoutInflater su dung de khoi tao noi dung cua cac tac XML bo cuc vao cac doi tuong View tuong ung
+        //ViewGroup la tap hop cac che do xem (TextView, EditText, ListView, v.v.), giống như một vùng chứa.
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_admin, container, false);
 

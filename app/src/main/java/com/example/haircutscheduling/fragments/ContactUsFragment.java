@@ -51,12 +51,12 @@ public class ContactUsFragment extends Fragment {
 
         mainActivity = (MainActivity) getActivity();
         SharedPreferences contact_prefs = mainActivity.getSharedPreferences(MainActivity.SHARED_PREFS_CONTACT, MODE_PRIVATE);
-        //cho phép bạn lưu lại các các thông số bạn đã thiết lập trước đó
+        //cho phep ban lua lai cac thong so ban da thiet lap truoc do
         String phone = contact_prefs.getString(MainActivity.PHONE, "89777402002");
         String email = contact_prefs.getString(MainActivity.EMAIL, "hieuminh735@gmail.com");
         String address = contact_prefs.getString(MainActivity.ADDRESS, "Ha Noi, Viet Nam");
 
-        // hiển thị một văn bản
+        //hien thi mot van ban
         TextView contactPhone = view.findViewById(R.id.editTextContactPhone);
         contactPhone.setText(phone);
 

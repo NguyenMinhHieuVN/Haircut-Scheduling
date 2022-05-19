@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
-    private FirebaseAuth mAuth;//chức năng xác thực người dùng
+    private FirebaseAuth mAuth;//chuc nang xac thuc nguoi dung
     private FirebaseDatabase database;
 
     private boolean savedUserFlag;
@@ -96,9 +96,9 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            //isSuccessful() để tìm ra code trạng thái trong khoảng 200-300 xác định một yêu cầu thành công.
+                            //isSuccessful() de tim ra code trang thai torng khoang 200-300 xac dinh mot yeu cau thanh cong
                             SharedPreferences.Editor editor = getSharedPreferences(SHARED_PREFS_LOGIN, MODE_PRIVATE).edit();
-                            //cho phép bạn lưu lại các các thông số bạn đã thiết lập trước đó
+                            //cho phep ban luu lai cac thong so ban da thiet lap truoc do
                             editor.putString(USERNAME, userName);
                             editor.putString(PASSWORD, password);
                             editor.apply();
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (!savedUserFlag) {
             fragmentTransaction.replace(R.id.fragmentcon, mainFragment).addToBackStack(null).commit();
-            //Thay đổi được lưu vào ngăn xếp phía sau để người dùng có thể khôi phục lại phân đoạn trước đó bằng cách nhấn nút Quay lại.
+            // thay doi duoc luu vao ngan xep phia sau de nguoi dung co th khoi phuc lai phan doan truoc do bang cach nhan nut quay lai.
         } else {
             fragmentTransaction.replace(R.id.fragmentcon, mainFragment).commit();
         }
@@ -136,9 +136,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void setFragment(Fragment fragment) {
         fragmentTransaction = fragmentManager.beginTransaction();
-        //là một Class cho phép thêm, xóa, sửa các fragment trong Stack.Frag
+        //la mot class cho pep them, xoa, sua cac fragment trong stack.flag
         fragmentTransaction.replace(R.id.fragmentcon, fragment).addToBackStack(null).commit();
-        //thay thế 1 fragment cũ bằng 1 fragment mới vào View được khai báo trước trong file xml
+        //thay the 1 fragment cu bang 1 fragment moi vao View duoc khai bao truoc trong file xml
     }
 
     public void setSelectAppointmentsFragment(HairStyleDataModel hairStyleDataModel) {

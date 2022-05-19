@@ -65,14 +65,14 @@ public class LoginFragment extends Fragment {
 
             String userName = userNameTextView.getText().toString();
             String password = passwordTextView.getText().toString();
-            //getText trả về Editable, nên muốn ra chuỗi “thuần” thì phải thêm bước toString
+            //getText tra ve Editable, nen muon ra chuoi thuan thi phai them buoc toString
 
             mainActivity = (MainActivity) getActivity();
 
             if(userName.isEmpty() || password.isEmpty()) {
                 Toast.makeText(mainActivity, "\n" +
                         "Please enter your username and password", Toast.LENGTH_LONG).show();
-                //một thông báo nhỏ mà ứng dụng gửi tới người dùng, nó xuất hiện gần phía cuối màn hình một khoảng thời gian dài 3,5 s
+                //mot thong bao nho ma ung dung gui toi nguoi dung, no xuat hien gan phia cuoi man hinh mot khoang thou gian dai 3.5s
             }
             else {
                 mainActivity.Login(userName,password);

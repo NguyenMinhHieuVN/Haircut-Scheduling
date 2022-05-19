@@ -21,7 +21,11 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link SigninFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
 public class SigninFragment extends Fragment {
 
     private FirebaseAuth mAuth;//chức năng xác thực người dùng
@@ -31,7 +35,12 @@ public class SigninFragment extends Fragment {
     public SigninFragment() {
         // Required empty public constructor
     }
-
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @return A new instance of fragment SigninFragment.
+     */
     public static SigninFragment newInstance() {
         SigninFragment fragment = new SigninFragment();
         return fragment;

@@ -14,7 +14,11 @@ import com.example.haircutscheduling.R;
 import com.example.haircutscheduling.activities.MainActivity;
 import com.google.firebase.database.FirebaseDatabase;
 
-
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link LoginFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
 public class LoginFragment extends Fragment {
 
     MainActivity mainActivity;
@@ -23,7 +27,12 @@ public class LoginFragment extends Fragment {
     public LoginFragment() {
         // Required empty public constructor
     }
-
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @return A new instance of fragment LoginFragment.
+     */
     public static LoginFragment newInstance() {
 
         LoginFragment fragment = new LoginFragment();

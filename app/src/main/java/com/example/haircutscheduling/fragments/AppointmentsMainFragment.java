@@ -18,7 +18,11 @@ import com.example.haircutscheduling.classes.DataModels.HairStyleDataModel;
 
 import java.util.ArrayList;
 
-
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link AppointmentsMainFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
 public class AppointmentsMainFragment extends Fragment {
 
     MainActivity mainActivity;
@@ -26,7 +30,12 @@ public class AppointmentsMainFragment extends Fragment {
     public AppointmentsMainFragment() {
         // Required empty public constructor
     }
-
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @return A new instance of fragment AppointmentsMainFragment.
+     */
     public static AppointmentsMainFragment newInstance() {
         AppointmentsMainFragment fragment = new AppointmentsMainFragment();
         return fragment;

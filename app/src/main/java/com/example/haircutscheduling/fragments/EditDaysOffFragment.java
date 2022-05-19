@@ -23,7 +23,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link EditDaysOffFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
 public class EditDaysOffFragment extends Fragment {
 
     MainActivity mainActivity;
@@ -36,7 +40,12 @@ public class EditDaysOffFragment extends Fragment {
         // Required empty public constructor
     }
 
-
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @return A new instance of fragment EditDaysOffFragment.
+     */
     public static EditDaysOffFragment newInstance() {
         EditDaysOffFragment fragment = new EditDaysOffFragment();
         return fragment;

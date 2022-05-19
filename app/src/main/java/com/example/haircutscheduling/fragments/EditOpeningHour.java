@@ -25,7 +25,11 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link EditOpeningHour#newInstance} factory method to
+ * create an instance of this fragment.
+ */
 public class EditOpeningHour extends Fragment {
 
     MainActivity mainActivity;
@@ -38,6 +42,12 @@ public class EditOpeningHour extends Fragment {
         // Required empty public constructor
     }
 
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @return A new instance of fragment EditOpeningHour.
+     */
     public static EditOpeningHour newInstance() {
         EditOpeningHour fragment = new EditOpeningHour();
         return fragment;

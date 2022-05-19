@@ -26,7 +26,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 
-
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link UserHistoryFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
 public class UserHistoryFragment extends Fragment {
 
     private RecyclerView.LayoutManager layoutManager;
@@ -36,7 +40,12 @@ public class UserHistoryFragment extends Fragment {
     private FirebaseDatabase database;
     private FirebaseAuth mAuto;
 
-
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @return A new instance of fragment userHistoryFragment.
+     */
     public static UserHistoryFragment newInstance() {
         UserHistoryFragment fragment = new UserHistoryFragment();
         return fragment;

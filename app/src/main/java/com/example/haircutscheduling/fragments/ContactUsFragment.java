@@ -14,7 +14,11 @@ import androidx.fragment.app.Fragment;
 import com.example.haircutscheduling.R;
 import com.example.haircutscheduling.activities.MainActivity;
 
-
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link ContactUsFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
 public class ContactUsFragment extends Fragment {
 
     MainActivity mainActivity;
@@ -23,6 +27,12 @@ public class ContactUsFragment extends Fragment {
         // Required empty public constructor
     }
 
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @return A new instance of fragment EditAdminContactDetailsFragment.
+     */
     public static ContactUsFragment newInstance() {
         ContactUsFragment fragment = new ContactUsFragment();
         return fragment;

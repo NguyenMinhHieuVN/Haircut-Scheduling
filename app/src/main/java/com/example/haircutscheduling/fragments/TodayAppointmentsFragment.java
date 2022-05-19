@@ -26,7 +26,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 
-
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link TodayAppointmentsFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
 public class TodayAppointmentsFragment extends Fragment {
 
     private RecyclerView.LayoutManager layoutManager;
@@ -38,7 +42,12 @@ public class TodayAppointmentsFragment extends Fragment {
     public TodayAppointmentsFragment() {
         // Required empty public constructor
     }
-
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @return A new instance of fragment AllAppointmentsFragment.
+     */
     public static TodayAppointmentsFragment newInstance() {
         TodayAppointmentsFragment fragment = new TodayAppointmentsFragment();
         return fragment;

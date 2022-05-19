@@ -34,7 +34,11 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Set;
 
-
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link SelectAppointmentsFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
 public class SelectAppointmentsFragment extends Fragment {
 
     private RecyclerView.LayoutManager layoutManager;
@@ -55,7 +59,12 @@ public class SelectAppointmentsFragment extends Fragment {
     public SelectAppointmentsFragment(HairStyleDataModel hairStyle) {
         this.hairStyleAppointment = hairStyle;
     }
-
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @return A new instance of fragment SelectAppointmentsFragment.
+     */
     public static SelectAppointmentsFragment newInstance(HairStyleDataModel hairStyle) {
         SelectAppointmentsFragment fragment = new SelectAppointmentsFragment(hairStyle);
         return fragment;
